@@ -1,0 +1,107 @@
+.missionHeader {
+    background-repeat: no-repeat !important;
+    background-size: 100% 100% !important;
+    height: 300px;
+    position: relative !important;
+
+    background: rgb(26, 26, 26, 0.4);
+}
+.headText {
+    position: absolute !important;
+    top: 30% !important;
+    left: 10% !important;
+    z-index: 100 !important;
+    color: white;
+
+}
+
+
+.contactUsBody .contactBodyHeader {
+    display: grid;
+    place-items: center;
+   
+}
+.contactUsBody .successFeedBack {
+display: grid;
+place-items: center;
+color: white;
+background-color: #00e673;
+border-radius: 10px;
+
+}
+.contactUsBody .successFeedBack p{
+    font-size: 18px;
+
+}
+.contactBodyHeader .divider{
+    height: 4px !important;
+    width: 50px;
+    background-color: orangered;
+}
+.contactUsBody{
+    /* max-width: 86%; */
+   margin-inline: 90px;
+   
+}
+
+.row .contactForms{
+border: 1px solid black;
+height: 350px;
+  border-radius: 4px;
+margin-top: 20px;
+margin-bottom: 20px;
+
+
+
+}
+.row .messageinput{
+    height: 100px !important;
+}
+
+.row .contactSubmit{
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    width: 150px;
+    height: 40px !important;
+    outline: none !important;
+
+
+}
+
+.row .contactDetails{
+    background-color: #f0f5f5;
+    border: 1px solid grey; 
+     margin-top: 20px;
+     border-radius: 4px;
+
+}
+.contactDetails .leftContent{
+    display: flex;
+    margin-bottom: 20px;
+   
+}
+.leftContent .iconSection{
+    
+    display: grid;
+    place-items: center;
+    margin-inline: 50px !important;
+   
+    
+}
+.contactSubmit{
+    border: transparent;
+}
+.testingGrid{
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    grid-gap: 10px;
+    gap: 10px;
+}
+.card1{
+    width: 250px;
+    height: 200px;
+    background-color: #00b36b;
+}

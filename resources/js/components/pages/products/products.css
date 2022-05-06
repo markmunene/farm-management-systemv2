@@ -1,0 +1,215 @@
+
+/* *{
+    font-family: sans-serif !important;
+} */
+html{
+    scroll-behavior: smooth;
+}
+
+.btnCartCount {
+    border: 1px solid transparent !important;
+    width: 30px !important;
+}
+
+.productCartContainer p {
+    font-size: 20px !important;
+    position: relative;
+}
+
+.btn .btn-success {
+    background-color: var(--mainGreen) !important;
+}
+.cartImage{
+    width: 100px;
+    height: 70px;
+}
+
+.productCartContainer .col-md-2,
+.productCartContainer .col-md-1,
+.productCartContainer .col-md-3 {
+    display: grid;
+    place-items: center;
+}
+
+.sectionTwo {
+    position: absolute;
+    right: 50px !important;
+    display: grid;
+    place-items: end;
+}
+
+.sectionTwo .totals {
+    font-size: 25px;
+}
+
+.removeItem {
+    cursor: pointer;
+}
+
+/* single product css */
+.singleProductWrapper {
+    position: relative;
+}
+
+.singleProductWrapper .img-small-block {
+    display: flex;
+    width: 400px;
+    align-items: flex-start !important;
+
+}
+
+.singleProductWrapper .SmallImg {
+    width: 100%;
+   aspect-ratio: 1/1;
+
+    margin: 5px;
+    opacity: 0.8;
+}
+.SmallImg:nth-child(1) {
+    margin-left: 0;
+}
+
+.singleProductWrapper .SmallImg:hover {
+    opacity: 1;
+}
+
+.singleProductWrapper .ImagesSection {
+    max-width: 80% !important;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.singleProductWrapper .comment-form {
+    transition: ease-in-out 0.3s !important;
+}
+
+.singleProHeader {
+    font-size: 25px;
+}
+
+.productComments {
+    display: flex;
+    flex-direction: row;
+}
+
+.commentsSection {
+    background-color: #e0e0d1;
+    height: 350px;
+    overflow-x: scroll;
+}
+
+.CommentContainer {
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    max-width: 300px;
+    width: 200px;
+    height: 200px;
+    max-height: 300px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+
+.carousel-item {
+    width: 350px !important;
+    margin-right: inherit;
+    display: block;
+}
+
+.carousel-item .CommentContainer p {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 14px;
+  
+
+}
+
+.productCount {
+    display: grid;
+    place-items: center;
+    border: solid 2px black;
+    padding: 8px;
+    font-weight: bold;
+}
+.Img-container{
+    height: 260px;
+    width: 400px;
+}
+.bigImg{
+    /* max-height: 250px; */
+ width: 100%;
+ aspect-ratio: 1/1.25;
+height: 250px;
+    max-width: 400px;
+    object-fit: cover;
+}
+
+.ProductCreateContainer {
+    display: grid;
+    place-content: center;
+    height: 85vh;
+}
+.ProductCreateContainer form {
+overflow-y: scroll !important;
+}
+
+.ProductCreateContainer form {
+    width: 500px !important;
+}
+
+.productCard .card {
+    position: relative;
+    height: 300px !important;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 10px;
+}
+
+.productCard .card .Productbody {
+    z-index: 200;
+    background-blend-mode: darken;
+    margin-top: 200px;
+    position: relative;
+    bottom: 0px !important;
+    transition: 0.8s ease-in-out;
+    color: var(--mainGreen);
+}
+
+.productCard .card .Productbody:hover {
+    z-index: 200;
+    background-blend-mode: darken;
+    background-color: white;
+    bottom: 10px !important;
+    cursor: pointer;
+}
+
+.allproductsContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.searchInput {
+    width: 80%;
+    height: 200px;
+    background-color: #b8b894;
+}
+.selectSearch{
+    width: 200px !important;
+}
+
+.inputForm {
+    display: grid;
+    place-items: center;
+}
+
+.createProductInput {
+    width: 80%; 
+    height: 100px;
+    background-color: #b8b894;
+}

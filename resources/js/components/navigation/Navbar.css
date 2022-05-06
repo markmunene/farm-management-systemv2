@@ -1,0 +1,184 @@
+* {
+    font-family: Cochin,
+
+        Georgia,
+        Times,
+        'Times New Roman',
+        serif;
+}
+.navbar-brand span{
+    font-size: 18px;
+    padding: 10px;
+    font-weight: bold;
+    box-shadow: 4px 4px 4px 4px black;
+}
+.navbar-collapse{
+    transition: ease-in-out .3s;
+}
+.nav-item {
+    margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.navbar {
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    z-index: 999;
+    margin-bottom: 5px;
+}
+.navbar .navbar-nav li {
+    position: relative;
+}
+
+.navbar .navbar-nav li .nav-link::after {
+    content: "";
+    height: 4px;
+    width: 0%;
+
+    position: absolute;
+    left: 0px;
+    bottom: -5px;
+    transition: 0.5s ease-in-out;
+    max-width: 100px;
+}
+
+.navbar .navbar-nav li .nav-link:hover::after {
+    width: 100%;
+    background: #ff751a;
+}
+
+.loginbtn {
+    border-radius: 25px !important;
+    background-color: orangered !important;
+    padding: 5px !important;
+    font-weight: bold;
+    color: white !important;
+    max-width: 100px;
+
+}
+
+.register {
+    border-radius: 25px !important;
+    background-color: orangered !important;
+    padding: 5px !important;
+    font-weight: bold;
+    color: white !important;
+    max-width: 100px;
+}
+
+.loginbtn:hover {
+    background-color: #00e600 !important;
+}
+
+.register:hover {
+    background-color: #00e600 !important;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    border-top: 4px solid orangered;
+
+}
+
+.dropdown .dropdown-menu {
+    max-width: 230px;
+    padding-right: 9px !important;
+}
+
+
+
+.dropdown-item {
+    font-weight: bold;
+    transition: 0.5s ease-out;
+}
+
+.dropdown .dropdown-menu .dropdown-item:hover {
+    color: orangered;
+    transform: translateX(5px);
+}
+
+.brandLogo {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+
+.widgetleft {
+    position: fixed !important;
+    top: 35% !important;
+    left: 0px !important;
+    transform: translateY(35%) !important;
+    -webkit-transform: translateY(35%);
+
+    color: orangered;
+    cursor: pointer !important;
+    display: flex !important;
+    flex-direction: column !important;
+    z-index: 10;
+
+}
+
+.widgetright {
+    position: fixed !important;
+    top: 35% !important;
+    right: 0px !important;
+    transform: translateY(35%) !important;
+    cursor: pointer !important;
+    display: flex !important;
+    flex-direction: column !important;
+    -webkit-transform: translateY(35%);
+    z-index: 10;
+
+}
+
+.widgetleft a {
+    color: white;
+    font-size: 16px;
+    padding: 20px !important;
+    margin: 3px !important;
+
+
+}
+
+.widgetleft .fab:hover {
+
+    color: red !important;
+
+}
+
+.widgetright a {
+    color: white;
+    transition: 0.4s ease-in-out;
+    padding: 10px !important;
+    margin: 3px !important;
+    background-color: rgb(255, 69, 0) !important;
+
+}
+
+.widgetright a:hover {
+    background-color: green !important;
+    color: white !important;
+}
+
+.cartBox {
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+.ItemsInCart {
+    width: 25px;
+    height: 25px;
+    background-color: var(--mainGreen);
+    color: white;
+    z-index: 3;
+    position: absolute;
+    right: 0px;
+    bottom: 24px;
+
+    border-radius: 50%;
+    font-weight: 800;
+}

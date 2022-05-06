@@ -1,0 +1,128 @@
+ :root {
+     --main-Grey: #b8b894;
+ }
+
+ .dashBoardAdminWrapper {
+     width: 100%;
+     display: flex;
+     flex-wrap: wrap;
+     font-family: sans-serif !important;
+ }
+
+ .dashBoardAdminWrapper .nav-item {
+     width: 90%;
+     position: relative;
+     margin-bottom: 25px;
+     transition: ease-in-out 0.3s;
+
+ }
+
+
+ .dashBoardAdminWrapper .nav-link {
+     color: black !important;
+     transition: ease-in-out 0.3s;
+ }
+
+ .dashBoardAdminWrapper .nav-link:hover {
+     background-color: var(--main-Grey);
+     border-top-left-radius: 20px;
+     border-bottom-left-radius: 20px;
+     position: relative;
+     margin-bottom: 25px;
+
+ }
+
+ .AllStatWrapper {
+     display: grid;
+     gap: 10px;
+     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+     width: 86%;
+     margin-left: 20px;
+
+ }
+
+ .StatCards {
+     width: 200px;
+     height: 150px;
+     padding: 1rem;
+     display: grid;
+     place-items: center;
+     background: white;
+     box-shadow: 4px 4px 15px var(--main-Grey);
+ }
+
+
+ .dashBoardAdminWrapper .sideBar {
+
+     width: 20%;
+     border: 1px solid var(--mainGreen);
+     background-color: white;
+     height: 80vh;
+     position: relative;
+     overflow: hidden;
+
+
+ }
+
+
+
+ @media screen and (max-width: 480px) {
+     .sideBar .nav-link span {
+         display: none;
+     }
+     .nav-link:hover {
+         background-color: var(--main-Grey);
+     }
+     .dashBoardAdminWrapper .nav-link:hover::before {
+         content: "";
+     }
+
+     .dashBoardAdminWrapper .nav-link:hover::after {
+         content: "";
+     }
+ }
+
+ .dashBoardAdminWrapper .Staticon {
+     color: var(--main-Grey);
+ }
+
+ .dashBoardAdminWrapper .sideBar .sideDecoration {
+     position: absolute;
+     right: 0px;
+     height: 80vh;
+     width: 30px;
+     background-color: var(--main-Grey);
+
+ }
+
+ .dashBoardAdminWrapper .nav-link:hover::before {
+     content: "";
+     position: absolute;
+     top: 30px;
+     right: 0px;
+     border-radius: 50%;
+     width: 30px;
+     height: 30px;
+     background: white;
+     /* box-shadow: 15px 15px 0 violet; */
+
+ }
+
+ .dashBoardAdminWrapper .nav-link:hover::after {
+     content: "";
+     position: absolute;
+     bottom: 30px;
+     right: 0px;
+     border-radius: 50%;
+     width: 30px;
+     height: 30px;
+     background: white;
+     /* box-shadow: 15px 15px 0 violet; */
+
+ }
+
+ .dashBoardAdminWrapper .AdminmainContent {
+     width: 70%;
+     border: 1px solid var(--mainGreen);
+
+ }

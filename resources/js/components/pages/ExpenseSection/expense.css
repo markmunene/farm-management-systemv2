@@ -1,0 +1,117 @@
+.mainExpense {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap !important;
+    justify-content: space-around;
+    flex-basis: 600px;
+}
+
+
+@media(max-width : 500px) {
+    .parentCard {
+        margin-left: 25px;
+    }
+}
+
+.expenseWrapper {
+
+    /* 
+    gap: 10px;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+     */
+
+    /* box-sizing: border-box !important; */
+    /* border: 2px solid violet; */
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+    flex: 4;
+    margin-bottom: 220px;
+}
+
+.inputbtn {
+    background-color: var(--main-Grey);
+    width: 30% !important;
+    max-width: 215px;
+    margin: 30px;
+    flex: 1;
+    z-index: 0;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.expenseCard {
+    background-color: #c2c2a3;
+    width: 350px !important;
+    height: 300px !important;
+    max-width: 350px;
+    min-width: 350px;
+    border-radius: 20px;
+
+}
+
+.LatestExpenses {
+    height: 130px;
+    padding: 5px !important;
+    margin: 5px !important;
+}
+
+.ExpenseTable {
+    overflow-y: scroll;
+    height: 60vh;
+}
+
+.GraphCard {
+    width: 650px;
+    max-width: 650px;
+    max-height: 350px;
+    height: 350px;
+    color: black !important;
+    flex: 4;
+    border-radius: 20px;
+}
+
+.parentCard {
+    /* margin-left: 100px; */
+    height: 700px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.parentCard>* {
+    /* width: 70%; */
+    flex-basis: calc(calc(800px - 100%)*9999);
+    flex-grow: 1;
+}
+
+.incomewrapper {
+    width: 40%;
+}
+
+.inputFields {
+    width: 100%;
+    background-color: white;
+}
+
+.expenseCard p {
+    font-size: 18px;
+}
+
+
+.Values {
+    display: flex;
+
+}
+
+.INcomeProgress {
+
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 20px;
+}

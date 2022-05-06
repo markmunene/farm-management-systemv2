@@ -1,0 +1,277 @@
+* {
+    font-family: sans-serif;
+}
+
+:root {
+    --mainGreen: #1aff1a;
+}
+
+.blogwrap {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: white;
+
+}
+
+
+.header {
+    display: grid;
+    justify-items: center;
+
+    position: relative;
+    height: 60px !important;
+}
+
+.header h2 {
+    border: 3px solid var(--mainGreen);
+    color: var(--mainGreen);
+    background-color: white;
+    z-index: 20;
+    width: 100px;
+    height: 60px;
+    font-size: 18px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+}
+
+.header .line {
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(50%);
+    background-color: var(--mainGreen);
+
+}
+
+.blogBody {
+    width: 80%;
+}
+
+.gridParent {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: 80% !important;
+    margin-left: 100px;
+
+}
+
+.blogimage {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    /* border-radius: 20px; */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.blogimage:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.imageContainer {
+    width: 300px;
+    height: 250px;
+    /* border-radius: 20px; */
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+
+}
+
+.mainContent {
+    width: 302px;
+    height: 350px;
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 1px solid black;
+    overflow-y: hidden;
+}
+
+.blogDesc {
+    overflow-wrap: break-word;
+}
+
+.blogTitle {
+    cursor: pointer;
+}
+
+.blogBody .col-md-9 {
+    overflow-y: scroll;
+
+}
+
+.titleWrap {
+
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.blogContainer {
+    padding: 5px !important;
+    /* margin: 10px; */
+    /* overflow-y: hidden; */
+    position: relative;
+    width: 300px;
+}
+
+.blogContainer .col-md-3 {
+    display: grid;
+    place-items: center;
+}
+
+.singleImage {
+    height: 80vh;
+}
+
+.notFound {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.singlewrapper {
+    margin: 10;
+}
+
+.singlewrapper .singleImage {
+    width: 100%;
+    height: 500px;
+
+}
+
+.singlewrapper ::-webkit-scrollbar {
+    width: 18px;
+}
+
+.singlewrapper ::-webkit-scrollbar-thumb {
+    background-color: #cc9900;
+    border-radius: 20px;
+}
+
+.singlewrapper ::-webkit-scrollbar-thumb:hover {
+    background-color: orange;
+}
+
+.singlewrapper ::-webkit-scrollbar-track {
+    background-color: var(--mainGreen);
+    border-radius: 20px;
+}
+
+.titleWrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.singlewrapper .singleBlogTitle {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+/* phone screen ui */
+@media(max-width : 500px) {
+    .singlewrapper .singleBlogTitle {
+
+        font-size: 18px;
+    }
+
+    .gridParent {
+        margin-left: 30px;
+    }
+
+    .col-md-3 .searchInput {
+        margin-left: 30px;
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+
+}
+
+.singlewrapper .float-right {
+    padding: 10px;
+    position: absolute;
+    right: 20px;
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+}
+
+.singlewrapper .authorSection {
+    display: flex;
+    position: relative;
+}
+
+.authorSection p {
+    font-weight: bold;
+    font-size: 16px;
+    color: #cc9900;
+}
+
+.authorSection span {
+    position: absolute;
+    right: 20px !important;
+}
+
+.aboutAuthor .title {
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: auto;
+
+}
+
+.aboutAuthor .AuthorImage {
+    width: 100%;
+    height: 200px;
+    margin: 10px;
+}
+
+.singlewrapper .col-md-3 {
+    display: grid;
+    place-items: center;
+}
+
+.singlewrapper .col-md-9 {
+    overflow-y: scroll;
+}
+
+.aboutAuthor .authorDesc {
+    width: auto;
+}
+
+.authoorImageWrapper {
+    display: grid;
+    place-items: center;
+    width: auto;
+}
+
+.singleTitle {
+
+    height: 50px;
+}
+
+.singleTitle .updatebtn {
+    cursor: pointer;
+}
+
+.linkToCreateBlog {
+    margin-left: 20px !important;
+    margin-bottom: 30px !important;
+}
