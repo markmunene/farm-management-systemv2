@@ -23,7 +23,7 @@
    
    e. allows farmers to complain to the admin in case of any issue in the contact us page
    
-   How to run::
+   <h3 style="background-color:#ffbb00;"> How to run::</h3>
    
    a. clone the repo
    
