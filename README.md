@@ -1,6 +1,6 @@
 <h1> Farm infomatics Management System </h1>
 
-This application is built using the following  tools:
+<h3> This application is built using the following  tools:</h3>
 
     a. laravel- used to built the backend
     
@@ -11,7 +11,7 @@ This application is built using the following  tools:
     d. mysql 
     
   
- <h2 style="background-color:#ffbb00;">Features :::</h2>
+ <h3 style="background-color:#ffbb00;">Features :::</h3>
  
    a. allows farmers to manage their expenses through finiancial management section
    
